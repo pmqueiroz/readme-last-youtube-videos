@@ -16,5 +16,5 @@ input:
     required: false
     default: './.github/templates/README.md.hbs'
 runs:
-  using: 'node18'
+  using: 'node16'
   main: 'dist/index.js'
