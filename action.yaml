@@ -1,0 +1,13 @@
+name: 'Readme Youtube Last Videos'
+description: 'Updates your readme profile with selected youtube channel last videos'
+branding:
+  icon: user
+  color: purple
+input:
+  display_videos_amount:
+    description: 'Set the amount of videos to display'
+    required: false
+    default: 3
+runs:
+  using: 'node18'
+  main: 'dist/index.js'
