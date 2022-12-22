@@ -4,10 +4,17 @@ branding:
   icon: user
   color: purple
 input:
-  display_videos_amount:
+  max_results:
     description: 'Set the amount of videos to display'
     required: false
     default: 3
+  channel_id:
+    description: 'The id of the channel to search videos'
+    required: true
+  entry_file:
+    description: 'Template file to render with the videos'
+    required: false
+    default: './.github/templates/README.md.hbs'
 runs:
   using: 'node18'
   main: 'dist/index.js'
