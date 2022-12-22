@@ -21,11 +21,18 @@ jobs:
       steps:
          - uses: actions/checkout@v2
          - name: Get Youtube Videos
-           uses: pmqueiroz/readme-last-youtube-videos@v1
+           uses: pmqueiroz/readme-last-youtube-videos@v1.0.1
            env:
               YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
            with:
               channel_id: "UUQ4zIVlfhsmvds7WuKeL2Bw"
+         - run: |
+              git config user.name pmqueiroz
+              git config user.email your@mail.com
+              git add README.md
+              git commit -m "docs: update readme"
+              git push origin master
+         
 ```
 
 > **Warning** the id you get from your channel url starts with `UC`, for some reason this api only works replacing by `UU`. (I didn't figured out why yet)
