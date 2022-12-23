@@ -1,0 +1,2 @@
+| <a href="https://youtu.be/h5NvTTOlOtI"><img width=300 src="https://i.ytimg.com/vi/h5NvTTOlOtI/sddefault.jpg" alt="Hydraulic Press Vs Lamborghini"></img></a> | <a href="https://youtu.be/se50viFJ0AQ"><img width=300 src="" alt="Would You Fly To Paris For A Baguette?"></img></a> | <a href="https://youtu.be/0CTp1a-aCUM"><img width=300 src="https://i.ytimg.com/vi/0CTp1a-aCUM/sddefault.jpg" alt="100 Kids Vs 100 Adults For $500,000"></img></a> |
+|--|--|--|
