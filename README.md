@@ -21,7 +21,7 @@ jobs:
       steps:
          - uses: actions/checkout@v2
          - name: Get Youtube Videos
-           uses: pmqueiroz/readme-last-youtube-videos@latest
+           uses: pmqueiroz/readme-last-youtube-videos@main
            env:
               YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
            with:
