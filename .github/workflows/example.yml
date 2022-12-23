@@ -1,4 +1,8 @@
-on: [push, workflow_dispatch]
+on:
+   workflow_dispatch:
+   push:
+      tags
+         - '*'
    
 jobs:
    update_readme:
