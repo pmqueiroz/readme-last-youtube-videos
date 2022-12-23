@@ -3,7 +3,10 @@ export interface PlaylistItem {
       title: string
       description: string
       thumbnails: {
-         standard: {
+         standard?: {
+            url: string
+         }
+         medium: {
             url: string
          }
       },
