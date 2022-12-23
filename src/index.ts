@@ -34,6 +34,7 @@ async function fetchLatestVideos({ channelId, maxResults, apiKey }:{ channelId: 
    const inputtedMaxResults = getInput('max_results')
    const inputtedChannelId = getInput('channel_id')
    const inputtedEntryFile = getInput('entry_file')
+   const inputtedOutputFile = getInput('output_file')
    
    if (!inputtedChannelId) throw new Error('Missing Channel Id')
    if (!existsSync(inputtedEntryFile)) throw new Error(`File ${inputtedEntryFile} does not exists. Did you remember to use checkout action`)
@@ -46,5 +47,5 @@ async function fetchLatestVideos({ channelId, maxResults, apiKey }:{ channelId: 
 
    const finalResult = templateRenderer({ videos })
 
-   await writeFile('README.md', finalResult)
+   await writeFile(inputtedOutputFile, finalResult)
 })()

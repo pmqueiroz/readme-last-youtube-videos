@@ -15,6 +15,10 @@ inputs:
     description: 'Template file to render with the videos'
     required: false
     default: './.github/templates/README.md.hbs'
+  output_file:
+    description: 'File to output the rendered content'
+    required: false
+    default: 'README.md'
 runs:
   using: 'node16'
   main: 'dist/index.js'

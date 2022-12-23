@@ -68,6 +68,7 @@ title: string
 | `channel_id` | The id of the channel to search videos | true | - |
 | `max_results` | Set the amount of videos to display | false | 3 |
 | `entry_file` | Template file to render with the videos | false | ./.github/templates/README.md.hbs |
+| `output_file` | File to output the rendered content | false | README.md |
 
 <!-- VARS -->
 
