@@ -16,6 +16,7 @@ jobs:
            with:
               channel_id: "UUX6OQ3DkcsbYNE6H8uQQuVA"
               output_file: "EXAMPLE.md"
+         - name: Push changes
            uses: actions-js/push@master
            with:
               github_token: ${{ secrets.GITHUB_TOKEN }}
