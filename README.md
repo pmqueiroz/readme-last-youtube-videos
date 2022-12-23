@@ -26,12 +26,10 @@ jobs:
               YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
            with:
               channel_id: "UUQ4zIVlfhsmvds7WuKeL2Bw"
-         - run: |
-              git config user.name pmqueiroz
-              git config user.email your@mail.com
-              git add README.md
-              git commit -m "docs: update readme"
-              git push origin master
+         - name: Push changes
+           uses: actions-js/push@master
+           with:
+              github_token: ${{ secrets.GITHUB_TOKEN }}
          
 ```
 
