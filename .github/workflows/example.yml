@@ -16,9 +16,7 @@ jobs:
            with:
               channel_id: "UUX6OQ3DkcsbYNE6H8uQQuVA"
               output_file: "EXAMPLE.md"
-         - run: |
-              git config user.name pmqueiroz
-              git config user.email pedroqueiroz593@gmail.com
-              git add EXAMPLE.md
-              git commit -m "docs: update example through gh action"
-              git push origin master
+           uses: actions-js/push@master
+           with:
+              github_token: ${{ secrets.GITHUB_TOKEN }}
+        
