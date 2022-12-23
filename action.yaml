@@ -3,7 +3,7 @@ description: 'Updates your readme profile with selected youtube channel last vid
 branding:
   icon: user
   color: purple
-input:
+inputs:
   max_results:
     description: 'Set the amount of videos to display'
     required: false
