@@ -6,9 +6,9 @@ import { existsSync } from 'fs'
 import type { PlaylistItems, PlaylistItem } from './entities'
 
 const playlistItemEnhancer = (item: PlaylistItem) => ({ 
-   videoId: item.snippet.resourceId.videoId,
-   thumbnail: item.snippet.thumbnails.standard.url,
-   title: item.snippet.title
+   videoId: item?.snippet?.resourceId?.videoId || '',
+   thumbnail: item?.snippet?.thumbnails?.standard?.url || '',
+   title: item?.snippet?.title || ''
 })
 
 async function fetchLatestVideos({ channelId, maxResults, apiKey }:{ channelId: string; maxResults: string; apiKey: string }) {
